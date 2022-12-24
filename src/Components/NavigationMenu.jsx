@@ -6,10 +6,10 @@ import Quotes from './Quotes'
 function NavigationMenu(props){
     return (
         <div>
-            <div className="py-3 mx-3" onClick={(e) => {Quotes()}}>
+            <div className="py-4 mx-3 text-center" onClick={(e) => {Quotes()}}>
                 <Quotes />
             </div>
-            <ul className='m-auto w-[90%]'>
+            <ul className='m-auto w-[90%] text-center'>
                 <li>
                     <Link 
                         to="/" 
@@ -26,6 +26,15 @@ function NavigationMenu(props){
                         onClick={() => setShowMenu(false)}
                     >
                         مهاراتي
+                    </Link>
+                </li>
+                <li>
+                    <Link 
+                        to="/projects" 
+                        className="text-orange py-3 border-b border-black block"
+                        onClick={() => setShowMenu(false)}
+                    >
+                        المشاريع العملية
                     </Link>
                 </li>
                 <li>
